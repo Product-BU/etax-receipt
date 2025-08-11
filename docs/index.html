@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open E-Tax Receipt - Open-Source E-Tax & E-Receipt Software</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add a subtle background pattern */
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#dbeafe 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        /* Simple animation for feature cards on hover */
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo SVG -->
+                <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h1 class="text-xl font-bold text-gray-900">Open E-Tax Receipt</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
+                <a href="#tech-stack" class="text-gray-600 hover:text-blue-600 transition-colors">Technology</a>
+                <a href="#open-source" class="text-gray-600 hover:text-blue-600 transition-colors">Why Open-Source?</a>
+            </nav>
+            <a href="https://github.com/Product-BU/etax-receipt" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-900 transition-transform transform hover:scale-105">
+                View on GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative hero-pattern">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <span class="bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full">ETDA Compliant for Thailand</span>
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-4 leading-tight">
+                        Modern E-Tax & E-Receipts, Made Simple.
+                    </h2>
+                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                        Open E-Tax Receipt is a free, open-source, and self-hostable solution to generate and manage electronic tax invoices and receipts, fully compliant with Thai regulations.
+                    </p>
+                    <div class="mt-10 flex justify-center items-center flex-wrap gap-4">
+                        <a href="https://github.com/Product-BU/etax-receipt" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 shadow-lg">
+                            Get Started
+                        </a>
+                        <a href="#features" class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-transform transform hover:scale-105">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Powerful Features, Zero Cost</h3>
+                    <p class="mt-3 text-lg text-gray-600">Everything you need to streamline your invoicing process.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-lg w-12 h-12 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">ETDA Compliant</h4>
+                        <p class="text-gray-600">Generates PDF and XML files for all documents, adhering to Thailand's regulatory standards.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-lg w-12 h-12 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">REST API</h4>
+                        <p class="text-gray-600">Integrate with your existing systems like ERP or accounting software for seamless workflows.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-300">
+                         <div class="bg-blue-100 text-blue-600 rounded-lg w-12 h-12 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c.251.023.501.05.75.082m.75.082a2.25 2.25 0 012.25 2.25v5.714a2.25 2.25 0 01-.659 1.591L13.5 14.5m0 0v5.25c0 .621.504 1.125 1.125 1.125h1.5c.621 0 1.125-.504 1.125-1.125v-5.25m0 0h3.75a2.25 2.25 0 002.25-2.25V7.874a2.25 2.25 0 00-2.25-2.25h-3.75M13.5 14.5L9 19.5" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Modern Admin Portal</h4>
+                        <p class="text-gray-600">A clean and responsive dashboard built with Django and AdminLTE for easy management.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-lg w-12 h-12 flex items-center justify-center mb-5">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Bulk CSV Import</h4>
+                        <p class="text-gray-600">Save time by creating hundreds of documents at once by simply uploading a CSV file.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-lg w-12 h-12 flex items-center justify-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0011.667 0l3.181-3.183m-4.991-2.691L12 15.364l-1.657-1.657m1.657-1.657l-1.657-1.657m0 0l-1.657 1.657m1.657-1.657L12 8.636l1.657 1.657m-1.657 1.657l1.657 1.657m0 0l1.657-1.657m1.657 1.657L12 15.364l-1.657-1.657" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Analytics Dashboard</h4>
+                        <p class="text-gray-600">Visualize your data with document statistics and charts to gain valuable insights.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="feature-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-lg w-12 h-12 flex items-center justify-center mb-5">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125v-1.5c0-.621.504-1.125 1.125-1.125H6.75m10.5 0h1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h.008v.016m0 0h1.125m15 0h1.125m-1.125 0h.008v.016m0 0h1.125m0 0h.008v.016m0 0h1.125m-1.125 0h.008v.016m0 0h.008v.016m0 0h.008v.016m-1.133 0h.008v.016" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Multiple Document Types</h4>
+                        <p class="text-gray-600">Supports Tax Invoices, Receipts, Credit Notes, and Debit Notes out of the box.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="py-20 bg-gray-50">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Built with Reliable Technology</h3>
+                    <p class="mt-3 text-lg text-gray-600">Leveraging a powerful and scalable technology stack.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 md:gap-x-12">
+                        <div class="flex items-center space-x-3" title="Python">
+                            <img src="https://placehold.co/40x40/3776AB/FFFFFF?text=Py" alt="Python Logo" class="h-10 w-10 rounded">
+                            <span class="text-lg font-medium">Python</span>
+                        </div>
+                         <div class="flex items-center space-x-3" title="Django">
+                            <img src="https://placehold.co/40x40/092E20/FFFFFF?text=Dj" alt="Django Logo" class="h-10 w-10 rounded">
+                            <span class="text-lg font-medium">Django</span>
+                        </div>
+                         <div class="flex items-center space-x-3" title="PostgreSQL">
+                            <img src="https://placehold.co/40x40/336791/FFFFFF?text=Pg" alt="PostgreSQL Logo" class="h-10 w-10 rounded">
+                            <span class="text-lg font-medium">PostgreSQL</span>
+                        </div>
+                         <div class="flex items-center space-x-3" title="SQLite">
+                            <img src="https://placehold.co/40x40/003B57/FFFFFF?text=SQL" alt="SQLite Logo" class="h-10 w-10 rounded">
+                            <span class="text-lg font-medium">SQLite</span>
+                        </div>
+                        <div class="flex items-center space-x-3" title="AdminLTE">
+                            <img src="https://placehold.co/40x40/4B646F/FFFFFF?text=A" alt="AdminLTE Logo" class="h-10 w-10 rounded">
+                            <span class="text-lg font-medium">AdminLTE</span>
+                        </div>
+                         <div class="flex items-center space-x-3" title="Chart.js">
+                            <img src="https://placehold.co/40x40/FF6384/FFFFFF?text=C" alt="Chart.js Logo" class="h-10 w-10 rounded">
+                            <span class="text-lg font-medium">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Open Source Section -->
+        <section id="open-source" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Free, Transparent, and Self-Hosted</h3>
+                    <p class="mt-3 text-lg text-gray-600 mb-8">Open E-Tax Receipt is open-source, which means you have complete freedom and control.</p>
+                    <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-lg mb-2">Total Control</h4>
+                            <p class="text-gray-600">Host it on your own infrastructure. Your data stays with you, always.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-lg mb-2">Fully Customizable</h4>
+                            <p class="text-gray-600">Modify the source code to fit your business's unique requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-blue-600">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h3 class="text-3xl font-bold text-white">Ready to Get Started?</h3>
+                <p class="mt-3 text-lg text-blue-100 max-w-2xl mx-auto">Fork the repository on GitHub, read the documentation, and start managing your e-tax invoices in minutes.</p>
+                <div class="mt-8">
+                     <a href="https://github.com/Product-BU/etax-receipt" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-transform transform hover:scale-105 shadow-lg">
+                        Fork on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Open E-Tax Receipt Project. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">
+                This is an open-source project developed by <a href="https://github.com/Product-BU" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">Brainergy</a> and contributors.
+            </p>
+            <p class="text-sm text-gray-400 mt-1">
+                Released under the MIT License.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
